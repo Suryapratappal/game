@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+</head>
+
+<body>
+
+    <div class="container-fluid header_bg  p-5 text-white text-uppercase text-center">
+        <div class="p-3 ">
+            <h2>Thunder world </h2>
+            <p class="text-dark"><span class="bg-white p-2 text-sm-center"> <b> welcome to my world </b></span></p>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark  navbar-dark sticky-top">
+        <div class="container-fluid">
+
+            <a href="#home" class="navbar-brand">
+                <img src="image/img.png" alt="logo" class="rounded-pill ms-4" style="height: 50px;">
+            </a>
+
+            <form class="d-flex w-50 ms-md-5 rounded-pill">
+                <input type="text" class="form-control me-1  rounded-pill" placeholder="search" name="search">
+                <button type="button" class="btn btn-danger rounded-pill">Search</button>
+            </form>
+
+            <button type="button" class="navbar-toggler " data-bs-toggle="collapse" data-bs-target="#demo">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end " id="demo">
+                <ul class="navbar-nav me-3">
+                    <li class="nav-item  me-3 ">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item  me-3">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item  me-3">
+                        <a href="#" class="nav-link">Details</a>
+                    </li>
+                    <li class="nav-item dropdown me-3">
+                        <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            data-bs-target="#drop">Categories</a>
+                        <ul class="dropdown-menu" id="drop">
+                            <li><a href="#" class="dropdown-item">Action</a></li>
+                            <li><a href="#" class="dropdown-item">Running</a></li>
+                            <li><a href="#" class="dropdown-item">Advangture</a></li>
+                            <li><a href="#" class="dropdown-item">Fighting</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div id="slider" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#slider" data-bs-slide-to="3"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active slider_img">
+                <img src="image/img7.jpg" alt="img7" class="d-block w-100">
+            </div>
+            <div class="carousel-item slider_img">
+                <img src="image/img7.jpg" alt="img7" class="d-block w-100">
+            </div>
+            <div class="carousel-item slider_img">
+                <img src="image/img7.jpg" alt="img7" class="d-block w-100">
+            </div>
+            <div class="carousel-item slider_img">
+                <img src="image/img7.jpg" alt="img7" class=" d-block w-100">
+            </div>
+        </div>
+
+        <button type="button" class="carousel-control-prev" data-bs-target="#slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button type="button" class="carousel-control-next" data-bs-target="#slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+</body>
+
+</html>
